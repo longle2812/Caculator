@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+    <style>
+        .button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Caculator </h1>
+    <input type="number" id = "input1" name="num1">
+    <input type="number" id = "input2" name="num2">
+    <br>
+    <button class ="button" id="1" onclick="addition()"> Addition(+)</button>
+    <button class ="button" id="2" onclick="sub()"> Subtraction(-) </button>
+    <button class ="button" id="3" onclick="mul()"> Multiplication(X)</button>
+    <button class ="button" id="4" onclick="div()"> Division(/)</button>
+    <p id="result"> Result: </p>
+</body>
+<script>
+    function addition() {
+        debugger
+        var num1 = document.getElementById("input1").value;
+        var num2 = document.getElementById("input2").value;
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        var res = num1 + num2;
+        document.getElementById("result").innerHTML= ("Result Addition:" +res);
+    }
+    function sub() {
+        debugger
+        var num1 = document.getElementById("input1").value;
+        var num2 = document.getElementById("input2").value;
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        var res = num1 - num2;
+        document.getElementById("result").innerHTML= ("Result Subtraction:" +res);
+    }
+    function mul() {
+        debugger
+        var num1 = document.getElementById("input1").value;
+        var num2 = document.getElementById("input2").value;
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        var res = num1 * num2;
+        document.getElementById("result").innerHTML= ("Result Multiplation:" +res);
+    }
+    function div() {
+        debugger
+        var num1 = document.getElementById("input1").value;
+        var num2 = document.getElementById("input2").value;
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        var res = num1 / num2;
+        document.getElementById("result").innerHTML= ("Result Division:" +res);
+    }
+
+</script>
+</html>
